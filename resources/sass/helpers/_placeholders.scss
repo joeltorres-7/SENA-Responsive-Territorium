@@ -1,0 +1,83 @@
+/* ------- Desktop & General Icons ------- */
+
+%icon-size {
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+%icon-size-teachers {
+    width: 3rem;
+    height: 3rem;
+}
+
+%icon-size-profile {
+    width: 14rem;
+    height: 14rem;
+}
+
+%pencil-icon-size {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+%ubication-icon-size {
+    width: 1.5rem;
+    height: 1.6rem;
+}
+
+%bell {
+    width: 1.6rem;
+}
+
+%bookmark-size {
+    width: 1.2rem;
+    height: 1.6rem;
+}
+
+%settings-icon {
+    width: 1.9rem;
+}
+
+%logo-white-size {
+    width: 3rem;
+    height: 2.6rem;
+}
+
+/* ------- Mobile Icons ------- */
+
+%icon-size-mobile {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+%close-icon-size {
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
+%bell-mobile {
+    width: 2rem;
+}
+
+%arrow-size-mobile {
+    width: 2rem;
+    height: 2rem;
+}
+
+%groups-size {
+    width: 2rem;
+    height: 2rem;
+}
+
+%logo-orange {
+    width: 9rem;
+    height: 9rem;
+}
+
+/* ------- Align Placeholders ------- */
+
+%flex-center {
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+}

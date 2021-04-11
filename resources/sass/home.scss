@@ -1,0 +1,709 @@
+@import 'helpers/navbar';
+@import 'helpers/home';
+
+/* ------- Smartphone's Queries ------- */
+
+@media only screen and (max-width: 1200px) {
+
+    /* ------- Banner ------- */
+
+    .groups {
+        width: 80%;
+        margin: 1rem auto;
+
+        .search-bar-div {
+            width: 40%;
+
+            img {
+                margin: 0rem 1rem 0rem .5rem;
+            }
+
+            &:hover {
+                width: 43%;
+            }
+        }
+
+        .group-gallery {
+            margin: .5rem auto;
+
+            div {
+                &.group {
+                    width: 23%;
+                    border-radius: 10px;
+                    margin: .5rem;
+
+                    img {
+                        &.logo-orange {
+                            width: 9rem;
+                            height: 9rem;
+                        }
+                    }
+
+                    p {
+                        margin: .1rem .5rem;
+                    }
+
+                    h5 {
+                        padding: .2rem;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    /* ------- Asidebar -------*/
+
+    .on-aside {
+        .asidebar {
+            width: 25%;
+        
+            .asidebar-list {
+                margin: 48% 20% 0% 20%;
+                height: 70%;
+        
+                li {
+                    a {
+                        font-size: 1.2rem;
+                    }
+                  }
+        
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    /* ------- User Settings -------*/
+
+    .on {
+        width: 15rem;
+        height: 14rem;
+    
+        .common, .close-session {
+            a {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 910px) {
+
+    /* ------- Banner ------- */
+
+    .groups {
+        width: 80%;
+        margin: 1rem auto;
+
+        .search-bar-div {
+            width: 53%;
+
+            img {
+                margin: 0rem 1rem 0rem .5rem;
+            }
+
+            &:hover {
+                width: 56%;
+            }
+        }
+
+        .group-gallery {
+            margin: .5rem auto;
+
+            div {
+                &.group {
+                    width: 30%;
+                    border-radius: 10px;
+                    margin: .5rem;
+
+                    img {
+                        &.logo-orange {
+                            width: 9rem;
+                            height: 9rem;
+                        }
+                    }
+
+                    p {
+                        margin: .1rem .5rem;
+                    }
+
+                    h5 {
+                        padding: .2rem;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    /* ------- Asidebar -------*/
+
+    .on-aside {
+        .asidebar {
+            width: 30%;
+        
+            .asidebar-list {
+                margin: 50% 20% 0% 20%;
+        
+                li {
+
+                    a {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+
+            hr {
+                width: 45%;
+            }
+        
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 710px) {
+
+    /* ------- Banner ------- */
+    
+    .banner-container {
+        margin-top: 5rem;
+        width: 90%;
+    }
+
+    .container-groups {
+        width: 90%;
+    }
+
+    .groups {
+        margin: 1rem auto;
+        width: 90%;
+    
+        .search-bar-div {
+            width: 60%;
+    
+            img {
+                margin: 0rem 1rem 0rem .5rem;
+            }
+
+            &:hover {
+                width: 65%;
+            }
+        }
+    
+        .group-gallery {
+            margin: .5rem auto;
+    
+            div {
+                &.group {
+                    width: 40%;
+                    border-radius: 10px;
+                    margin: .5rem;
+    
+                    img {
+                        &.logo-orange {
+                            width: 10rem;
+                            height: 10rem;
+                        }
+                    }
+    
+                    p {
+                        margin: .1rem .5rem;
+                    }
+    
+                    h5 {
+                        padding: .2rem;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            
+        }
+    }  
+
+    /* ------- Asidebar -------*/
+
+    .on-aside {
+        .asidebar {
+            width: 40%;
+            }
+    }
+
+    .on {
+        width: 16rem;
+        height: 15rem;
+    
+        .common, .close-session {
+            a {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 610px) {
+
+    /* ------- Mobile User Settings and Asidebar -------*/
+
+    /* ------- Hide the Asidebar ------- */
+
+    #tools {
+        display: none;
+    }
+
+    .on-aside {
+        display: none;
+        .asidebar {
+            display: none;
+            }
+    }
+
+    /* -------  Icons and Ul Selectors Change ------- */
+
+    ul {
+        &.normal-us {
+            display: none;
+        }
+    
+        &.user-settings-x {
+            display: flex;
+        }
+    }
+
+    .left-navbar {
+        a {
+            img {
+                &.logo-white {
+                    width: 3.4rem;
+                    height: 3rem;
+                }
+            }
+        }
+    }
+    
+    /* ------- User Settings Menu ------- */
+
+    .on {
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    
+        .common, .close-session {
+            width: 90%;
+
+            a {
+                font-size: 1.3rem;
+                
+                &.smart {
+                    display: inline-block;
+                }
+
+                &.my-profile {
+                   display: none;
+                }
+            }
+
+            img {
+                &.smart {
+                    display: inline-block;
+                }
+            }
+            
+            hr {
+                &.smart {
+                    display: inline-block;
+                }
+            }
+
+            p {
+                &.smart {
+                    display: inline-block;
+                }
+            }
+
+            div.settings-user {
+                display: flex;
+            }
+
+        }
+    }
+
+    div#theme-selection {
+        border-radius: 0px;
+        box-shadow: 0px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    
+        .arrow-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: .2rem 0rem;
+            margin-bottom: .2rem;
+        }
+    
+        h5 {
+            color: var(--font);
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: .2rem .6rem;
+        }
+    
+        hr {
+            width: 30%;
+        }
+    
+        p {
+            width: 60%;
+            margin: .8rem auto;
+            font-size: 1.5rem;
+        }
+
+        img {
+            position: absolute;
+            left: 3rem;
+            top: 6.5rem;
+        }
+    
+        /*------ Toggle Switch ------*/
+    
+        .toggle-container {
+            margin: .2rem auto;
+    
+            input[type=checkbox]{
+                height: 0;
+                width: 0;
+                visibility: hidden;
+                display: none;
+            }
+            
+            label {
+                cursor: pointer;
+                text-indent: -9999px;
+                width: 6rem;
+                height: 3rem;
+                background: rgb(156, 154, 154);
+                float: right;
+                border-radius: 100px;
+                position: relative;
+            }
+            
+            label:after {
+                content: '';
+                position: absolute;
+                top: 3px;
+                left: 3px;
+                width: 2.6rem;
+                height: 2.6rem;
+                background: #fff;
+                border-radius: 90px;
+                transition: 0.3s;
+            }
+            
+            input:checked + label {
+                background: var(--theme-night);
+            }
+            
+            input:checked + label:after {
+                left: calc(100% - 5px);
+                transform: translateX(-100%);
+            }
+            
+            label:active:after {
+                width: 45px;
+            }
+            
+            // centering
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+        
+            html.transition,
+            html.transition *,
+            html.transition *::after {
+                transition: all 750ms !important;
+                transition-delay: 0 !important;
+            }
+        }
+    }
+
+    /* ------- Banner ------- */
+    
+    .banner-container {
+        margin-top: 5rem;
+        width: 90%;
+
+        img {
+            &.main-banner-mobile {
+                display: block;
+            }
+        
+            &.main-banner {
+                display: none;
+            }
+        }
+    }
+
+
+    .groups {
+        width: 80%;
+        margin: 1rem auto;
+    
+        .search-bar-div {
+            width: 100%;
+    
+            img {
+                margin: 0rem 1rem 0rem .5rem;
+            }
+
+            &:hover {
+                width: 100%;
+            }
+        }
+    
+        .group-gallery {
+            margin: .5rem auto;
+            justify-content: center;
+    
+            div {
+                &.group {
+                    width: 100%;
+                    border-radius: 10px;
+                    margin: .5rem;
+    
+                    img {
+                        &.logo-orange {
+                            width: 12rem;
+                            height: 12rem;
+                        }
+                    }
+    
+                    p {
+                        margin: .1rem .5rem;
+                    }
+    
+                    h5 {
+                        padding: .2rem;
+
+                        &:hover {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }  
+}
+
+@media only screen and (max-width: 400px) {
+    
+    /* ------- Banner ------- */
+    
+    .banner-container {
+        margin-top: 5rem;
+        width: 95%;
+
+        img {
+            &.main-banner-mobile {
+                display: block;
+            }
+        
+            &.main-banner {
+                display: none;
+            }
+        }
+    }
+
+    .container-groups {
+        width: 90%;
+    }
+
+    .groups {
+        width: 90%;
+        margin: 1rem auto;
+    
+        .search-bar-div {
+            width: 100%;
+    
+            img {
+                margin: 0rem 1rem 0rem .5rem;
+            }
+
+            &:hover {
+                width: 100%;
+            }
+        }
+    
+        .group-gallery {
+            margin: .5rem auto;
+            flex-direction: column;
+    
+            div {
+                &.group {
+                    width: 100%;
+                    border-radius: 10px;
+                    margin: .5rem;
+    
+                    img {
+                        &.logo-orange {
+                            width: 12rem;
+                            height: 12rem;
+                        }
+                    }
+    
+                    p {
+                        margin: .1rem .5rem;
+                    }
+    
+                    h5 {
+                        padding: .2rem;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            
+        }
+    }  
+}
+
+/* ------- Height Queries ------- */
+
+@media only screen and (max-height: 700px) {
+    .on-aside {
+        .asidebar {
+            height: 100%;
+        
+            .asidebar-list {
+                margin: 30% 20% 0% 20%;
+                height: 100%;
+        
+                li {
+                    padding: .6rem .4rem;
+        
+                    a {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .on-aside {
+        .asidebar {
+            height: 100%;
+
+            .asidebar-list {
+                margin: 30% 20% 0% 20%;
+                height: 100%;
+        
+                li {
+                    padding: .5rem .4rem;
+        
+                    a {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-height: 550px) {
+    .on-aside {
+        .asidebar {
+            height: 100%;
+
+            .asidebar-list {
+                margin: 25% 10% 0% 10%;
+                height: 100%;
+        
+                li {
+                    padding: .5rem .4rem;
+        
+                    a {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .on-aside {
+        .asidebar {
+            height: 100%;
+            width: 100%;
+
+            .asidebar-list {
+                margin: 8% .2rem 0% .2rem;
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                align-items: center;
+        
+                li {
+                    padding: .5rem .4rem;
+                    height: 30%;
+                    display: flex;
+                    align-items: center;
+        
+                    a {
+                        font-size: 1.6rem;
+                    }
+                }
+                
+                hr {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 610px) and (max-height: 700px) {
+    .on {
+
+        .common, .close-session {
+            margin-top: 8%;
+
+            a {
+                font-size: 1.2rem;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 610px) and (max-height: 600px) {
+    .on {
+        margin-top: 10%;
+        .common, .close-session {
+            
+
+            a {
+                font-size: 1.2rem;
+            }
+
+        }
+    }
+}

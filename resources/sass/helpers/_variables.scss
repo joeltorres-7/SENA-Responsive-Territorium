@@ -1,0 +1,30 @@
+
+/* --------- Light Theme Colors --------- */
+html {
+    --background: #FFFCF9;
+    --navbar: #F98948;
+    --font: #FFFCF9;
+    --font-text: #120309;
+    --font-dark: #120309;
+    --blue: #4F6D7A;
+    --theme-night: #F98948;
+    --chat: #586BA4;
+    --grey: #EAEAEA;
+}
+/* --------- Dark Theme Colors --------- */
+
+html[data-theme="dark"] {
+    --background: #1F2933;
+    --navbar: #616E7C;
+    --font: #F5F7FA;
+    --font-dark: #FFFCF9;
+    --blue: #3E4C59;
+    --chat: #586BA4;
+    --grey: #EAEAEA;
+}
+
+/* --------- Common Colors --------- */
+
+/* --------- Common Colors --------- */
+
+$roboto: 'Roboto', 'Open Sans', sans-serif;

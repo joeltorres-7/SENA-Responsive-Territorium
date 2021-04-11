@@ -1,0 +1,103 @@
+@import 'variables';
+@import 'placeholders';
+@import 'animations';
+
+/* ------- Global Selectors ------- */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: $roboto;
+}
+
+body {
+    background-color: var(--background);
+}
+
+nav {
+	background-color: var(--navbar);
+	@extend %flex-center;
+	justify-content: flex-end;
+	padding: .4rem;
+	box-shadow: 0rem .4rem .2rem rgba(0, 0, 0, 0.12);
+	transition: .5s;;
+	position: fixed;
+	width: 100%;
+	z-index: 20;
+	top: 0;
+	
+	a {
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+	}
+}
+
+ul {
+	&.normal-us {
+		@extend %flex-center;
+		list-style: none;
+		
+		li {
+			padding-right: 1rem;
+		}
+		
+		#user {
+			@extend %icon-size;
+		}
+
+		#bell {
+			@extend %bell;
+			margin-right: .5rem;
+		}
+	}
+
+	&.user-settings-x {
+		@extend %flex-center;
+		list-style: none;
+		display: none;
+		
+		li {
+			padding-right: 1rem;
+		}
+
+		#user-mobile {
+			@extend %icon-size-mobile;
+		}
+
+		#bell-mobile {
+			@extend %bell-mobile;
+			margin-right: .5rem;
+		}
+
+		#close {
+			@extend %close-icon-size;
+			margin: .45rem 1.2rem;
+			display: none;
+		}
+	}
+}
+
+/* ------- Classes and Id's ------- */
+
+.left-navbar {
+	@extend %flex-center;
+	position: absolute;
+	left: .8rem;
+	margin-left: .8rem;
+
+	img {
+		&.logo-white {
+		@extend %logo-white-size;
+		}
+	
+		&#tools {
+			@extend %settings-icon;
+			margin-right: 1rem;
+		}
+	}
+}
+
+	/*# sourceMappingURL=index.css.map */

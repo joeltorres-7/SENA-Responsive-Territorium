@@ -1,0 +1,356 @@
+html {
+    font-family: $roboto;
+}
+
+/* ------- Course Container ------- */
+
+.course {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem auto auto auto;
+
+    hr {
+        z-index: -1;
+        color: var(--font-dark);
+        width: 60%;
+        margin: 1rem auto;
+        opacity: .6;
+        transition: 1s;
+    }
+    
+    div {
+
+        /* ------- Course Tools ------- */
+        
+        &.tools {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 3rem;
+
+            h5 {
+                font-size: 1.2rem;
+                color: var(--font-dark);
+                transition: .8s;
+                text-align: center;
+            }
+
+            h4 {
+                font-size: 1.5rem;
+                margin: .5rem;
+                color: var(--font-dark);
+                transition: .8s;
+                text-align: center;
+            }
+
+            p {
+                font-size: 1.1rem;
+                margin: 0rem auto;
+                font-weight: bold;
+                color: var(--font-dark);
+                transition: .8s;
+            }
+            
+            div {
+                img {
+                    width: 8.5rem;
+                    height: 8rem;
+                }
+
+                &#logo-div {
+                    img {
+                        &.logo-orange {
+                            margin: 1rem;
+                        }
+                    }
+                }
+
+                &#logo-div-dark {
+                    display: none;
+
+                    img {
+                        &.logo-white {
+                            width: 11rem;
+                            height: 10rem;
+                        }
+                    }
+                }
+
+                &.teacher-icons {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        margin: .5rem;
+                        @extend %icon-size-teachers;
+                    }
+                }
+
+                &.tools-list {
+                    width: 90%;
+                    margin: 0px auto;
+                    
+                    ul {
+                        list-style: none;
+
+                        li {
+                            margin: 1rem;
+                            text-align: center;
+                            padding: .7rem 1.2rem;
+                            border: 1px solid rgba($color: grey, $alpha: .5);
+                            border-radius: 10px;
+                            transition: .8s;
+                            box-shadow: 0rem .2rem .1rem rgba(0, 0, 0, 0.1);
+
+                            &:hover {
+                                border: 1px solid var(--font-dark);
+                                box-shadow: 0rem .3rem .2rem rgba(0, 0, 0, 0.2);
+                            }
+
+                            a {
+                                color: var(--font-dark);
+                                text-decoration: none;
+                                font-size: 1.4rem;
+                                width: 100%;
+                                height: 100%;
+                                transition: .8s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* ------- Course Content, Banner and Posts  ------- */
+
+        &.content {
+            margin: 0rem 1.5rem;
+            width: 70%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            div {
+                &.course-banner {
+                    margin: 1rem auto;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 14rem;
+                    border-radius: 10px;
+
+                    h2 {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 58px;
+                        line-height: 71px;
+                        text-align: center;
+                        color: #FFFCF9;
+                        text-shadow: -4px 4px 9px rgba(0, 0, 0, 0.8);
+                    }
+                }
+
+                &.posts-header {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 1rem 1rem 2rem 1rem;
+                    width: 90%;
+
+                    h5 {
+                        color: var(--font-dark);
+                        font-size: 1.4rem;
+                    }
+
+                    img {
+                        @extend %settings-icon;
+                    }
+
+                    div {
+                        &.sortOption {
+                            display: none;
+                        }
+                    }
+                }
+
+                &.posts-body {
+                    display: flex;
+                    flex-direction: column;
+                    width: 90%;
+
+                    p {
+                        &.publication {
+                            font-size: 1.2rem;
+                            width: 100%;
+                            padding: 1rem;
+                            transition: .8s;
+                            margin: .5rem auto;
+                            color: var(--font-dark);
+                        }
+
+                        &.no-publications {
+                            text-align: center;
+                            width: 100%;
+                            opacity: .6;
+                            font-size: 1.4rem;
+                            margin: .5rem auto;
+                            color: var(--font-dark);
+                            transition: 1s;
+                        }
+                    }
+
+                    div {
+                        &.teacher {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            div {
+                                &.content-teacher {
+                                    display: flex;
+                                    align-items: center;
+
+                                    .info {
+                                        display: flex;
+                                        flex-direction: column;
+                                        width: 100%;
+        
+                                        p {
+                                            padding: .2rem;
+                                            font-size: 1.1rem;
+                                            color: var(--font-dark);
+                                            transition: .8s;
+        
+                                            &.time {
+                                                font-size: 1rem;
+                                                opacity: .6;
+                                                color: var(--font-dark);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &.bookmark {
+                                    img {
+                                        @extend %bookmark-size;
+                                        margin: 1rem;
+                                    }
+                                }
+
+                                &.bookmark-dark {
+                                    display: none;
+
+                                    img {
+                                        @extend %bookmark-size;
+                                        margin: 1rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.actions {
+                            width: 90%;
+                            margin: .2rem auto;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+
+                            div {
+
+                                &#love-div {
+                                    img {
+                                        opacity: 1;
+                                        margin: .5rem;
+                                        width: 1.8rem;
+                                        transition: .5s;
+
+                                        &.active {
+                                            display: block;
+                                            opacity: 1;
+                                        }
+                                        
+                                        &.off {
+                                            display: none;
+                                            opacity: 0;
+                                        }
+
+                                        &.love-checked {
+                                            opacity: 0;
+                                        }
+                                    }
+                                }
+
+                                &#love-div-dark {
+                                    display: none;
+
+                                    img {
+                                        opacity: 1;
+                                        margin: .5rem;
+                                        width: 1.8rem;
+                                        transition: .5s;
+
+                                        &.active {
+                                            display: block;
+                                            opacity: 1;
+                                        }
+                                        
+                                        &.off {
+                                            display: none;
+                                            opacity: 0;
+                                        }
+
+                                        &.love-checked-dark {
+                                            opacity: 0;
+                                        }
+                                    }
+                                    
+                                }
+
+                                &#comments {
+                                    height: 2.5rem;
+
+                                    img {
+                                        margin: .5rem .5rem .5rem 3rem;
+                                        width: 1.6rem;
+                                        height: 1.5rem;
+                                    }
+                                }
+
+                                &#comments-dark {
+                                    height: 2.5rem;
+                                    display: none;
+
+                                    img {
+                                        margin: .5rem .5rem .5rem 3rem;
+                                        width: 1.6rem;
+                                        height: 1.5rem;
+                                    }
+                                }
+                            }
+
+                            p {
+                                padding: 0;
+                                font-size: 1rem;
+                                opacity: .6;
+                                transition: .8s;
+                                color: var(--font-dark);
+                                transition: .8s;
+                            }
+                        }
+                    }
+                    
+                    img {
+                        &.user-icon {
+                            @extend %icon-size;
+                            margin: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil | Territorium</title>
+	<link rel="stylesheet" href="./resources/sass/profile.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    	<!-- Navbar -->
+        <nav>
+        	<div class="left-navbar">
+        		<a href="#"><img id="tools" src="./resources/images/icons/settings-bar.svg" alt="Mas herramientas">
+    			</a>
+        		<a href="index.html"><img class="logo-white" src="./resources/images/logos/sena-logo-white.png" alt="Logo Principal Sena Territorio">
+        		</a>
+			</div>
+
+			<!-- Desktop Resolutions -->
+
+        	<ul class="normal-us">
+        		<li>
+        			<a href="#"><img id="bell" src="./resources/images/icons/notification-bell.svg" alt="Notificaciones"></a>
+        		</li>
+        		<li>
+        			<a href="#"><img id="user" src="./resources/images/icons/user-icon.png" alt="Opciones de perfil"></a>
+				</li>
+			</ul>
+
+			<!-- Mobile Resolutions -->
+
+			<ul class="user-settings-x">
+				<li>
+        			<a href="#"><img id="bell-mobile" src="./resources/images/icons/notification-bell.svg" alt="Notificaciones"></a>
+        		</li>
+        		<li>
+        			<a href="#"><img id="user-mobile" src="./resources/images/icons/user-icon.png" alt="Opciones de perfil"></a>
+				</li>
+        		<li>
+        			<a href="#"><img id="close" src="./resources/images/icons/close.svg" alt="Cerrar"></a>
+        		</li>
+			</ul>
+
+		<!-- Asidebar -->
+
+		</nav>
+		<div class="asidebar-background" id="asidebar-bg">
+			<div class="asidebar">
+				<ul class="asidebar-list">
+					<li>
+						<a href="#">Muro</a>
+					</li>
+					<li>
+						<a href="#">Portafolio</a>
+					</li>
+					<li>
+						<a href="#">Calendario</a>
+					</li>
+					<hr>
+					<li>
+						<a href="#">Encuestas</a>
+					</li>
+					<li>
+						<a href="#">Repositorio</a>
+					</li>
+					<li>
+						<a href="#">Bandeja de Entrada</a>
+					</li>
+					<li>
+						<a href="#">Puntaje & Medallero</a>
+					</li>
+					<hr>
+					<li>
+						<a href="#">Feedback</a>
+					</li>
+					<li>
+						<a href="#">Ayuda</a>
+					</li>
+				</ul>
+				<p>Territorium 2020 ©</p>
+			</div>
+		</div>
+		<div class="user-settings">
+			<div class="common">
+				<a href="profile.html" class="my-profile">Mi Perfil</a>
+				<div class="settings-user">
+					<img class="smart" src="./resources/images/icons/user-icon.png" alt="User's Profile Image" />
+					<a class="smart" href="profile.html">Joel Torres Cañas</a>
+					<a class="arrow-settings" href="profile.html">
+						<img class="smart arrow-right" src="./resources/images/icons/arrow-right.svg" alt="Arrow right icon" />
+					</a>
+				</div>
+				<hr class="smart">
+				<a href="#">Configuracion</a>
+				<a href="#" class="smart">Chat</a>
+				<a href="#" class="smart">Muro</a>
+				<a href="#" id="theme-selector">Tema</a>
+				<a href="#" class="smart">Calendario</a>
+				<a href="#" class="smart">Encuestas</a>
+				<a href="#" class="smart">Repositorio</a>
+				<a href="#" class="smart">Bandeja de Entrada</a>
+				<a href="#" class="smart">Puntaje y Medallero</a>
+			</div>
+			<hr>
+			<div class="close-session">
+				<a href="#">Cerrar Sesion</a>
+				<p class="smart">Territorium 2020 ©</p>
+			</div>
+		</div>
+		<div id="theme-selection">
+			<div class="arrow-box">
+				<a href="#"><img id="back-arrow-theme" src="./resources/images/icons/arrow-left.svg" alt="Arrow left theme selection"></a>
+				<h5 class="dark-theme-selection">Tema Oscuro</h5>
+			</div>
+
+			<hr class="dark-theme-selection">
+			<p class="dark-theme-selection">Reduce el brillo y crea una experiencia ideal para la noche</p>
+			<div class="toggle-container">
+				<input type="checkbox" name="theme" id="switch"><label for="switch">Toggle</label>
+			</div>
+		</div>
+	</header>
+	<main>
+
+		<!-- Main Profile Container -->
+
+		<div class="profile">
+
+			<!-- Left Container that have the user information list and edit button -->
+
+			<div class="options">
+				<img class="profile-icon" src="./resources/images/icons/user-icon.png" alt="User's Icon">
+				<div class="user-name">
+					<h5>Joel Torres Cañas</h5>
+				</div>
+				<div class="ubication">
+					<p>Cucuta</p>
+					<div id="ubication">
+						<img src="./resources/images/icons/ubication-icon.svg" alt="Ubication Icon">
+					</div>
+					<div id="ubication-dark">
+						<img src="./resources/images/icons/ubication-icon-dark.svg" alt="Ubication Icon">
+					</div>
+				</div>
+				<div class="edit">
+					<a href="#">Editar</a>
+					<div id="pencil">
+						<img src="./resources/images/icons/pencil-edit.svg" alt="Pencil-icon">
+					</div>
+					<div id="pencil-dark">
+						<img src="./resources/images/icons/pencil-edit-dark.svg" alt="Pencil-icon">
+					</div>
+				</div>
+				<hr>
+				<div class="option-container">
+					<ul>
+						<li><a href="#">Compañeros</a></li>
+						<li><a href="#">Clases</a></li>
+						<li><a href="#">Portafolio</a></li>
+						<li><a href="#">Medallas</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr class="query-profile">
+
+			<!-- Right Container that have the user's about me section and recent posts -->
+
+			<div class="about">
+				<div class="about-me">
+					<h4>Sobre Mi</h4>
+					<p>Tengo 18 años de edad. Soy diseñador web, diseñador grafico, y copywriter. Actualmente hablo 3 idiomas. Ingles, Español y Japones. Y me encuentro trabajando en un proyecto cientifico y educativo.</p>
+				</div>
+				<hr>
+				<div class="activity">
+					<h5>Actividad Reciente</h5>
+					<div class="user-activity">
+						<img src="./resources/images/icons/user-icon.png" alt="User's Icon">
+						<div>
+							<p class="user-name">Joel Torres Cañas</p>
+							<p class="time">Hace 50 minutos</p>
+						</div>
+					</div>
+					<p class="publication">Algunas buenas aplicaciones para reforzar tu ingles son Memrise y Duolingo.</p>
+
+					<!-- Love and Comment icons -->
+
+					<div class="actions">
+						<div id="love-div">
+							<a href="#"><img id="love" class="active" src="./resources/images/icons/love-icon.svg" alt="Love this publication"></a>
+							<a href="#"><img id="love-checked" class="off" src="./resources/images/icons/love-icon-checked.svg" alt="Love this publication"></a>
+						</div>
+						<div id="love-div-dark">
+							<a href="#"><img id="love-dark" class="active" src="./resources/images/icons/love-icon-dark.svg" alt="Love this publication"></a>
+							<a href="#"><img id="love-checked-dark" class="off" src="./resources/images/icons/love-icon-checked-dark.svg" alt="Love this publication"></a>
+						</div>
+						<p>7</p>
+						<div id="comments">
+							<a href="#"><img class="comments" src="./resources/images/icons/comment-icon.svg" alt="Comment this publication"></a>
+						</div>
+						<div id="comments-dark">
+							<a href="#"><img class="comments" src="./resources/images/icons/comment-icon-dark.svg" alt="Comment this publication"></a>
+						</div>
+						<p>5</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+<script src="./resources/js/index.js"></script>
+</html>
+
+<!-- Website designed by @joeltorres-7 - Github-->
